@@ -1,0 +1,81 @@
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-md-2 col-sm-12 col-xs-12">
+           <nav id="navbar">
+               <h2>Translator App</h2>
+               <h3>Technical Documentation</h3>
+               <!--content stacking for smaller screens-->
+               <ul class="nav nav-pills nav-stacked">
+                <!--internal linking to the respective sections-->
+                   <a class="nav-link" href="#Introduction" rel="internal">
+                       <li>Introduction</li>
+                   </a>
+                   <a class="nav-link" href="#What_you_should_already_know" rel="internal">
+                       <li>What you should already know</li>
+                   </a>
+                   <a class="nav-link" href="#About_Topic" rel="internal">
+                       <li>About the topic</li>
+                   </a>
+                   <a class="nav-link" href="#Rule_1" rel="internal">
+                       <li>Rule 1</li>
+                   </a>
+                   <a class="nav-link" href="#Rule_2" rel="internal">
+                       <li>Rule 2</li>
+                   </a>
+                </ul>
+           </nav>
+       </div>
+       <div class="col-md-10 col-sm-12 col-xs-12">
+           <main id="main-doc">
+               <section class="main-section" id="Introduction" >
+                <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                   <h3 style = "background: black; color: white">Introduction</h3>
+                   <article>
+                   <p>This is a translator app. It generates Protein amino acid sequence from DNA sequence.
+                       </article>
+               </section>
+               <section class="main-section" id="What_you_should_already_know">
+                   <h3 style = "background: black; color: white">What you should already know</h3>
+                   <article>
+                       <p>Background information before getting into the topic:</p>
+<!--creating list using html-->
+                       <li>DNA is deoxyribonucleic acid</li>
+                       <li>Protein is protein</li>
+                       <li>How to run python: python app.py</li>
+                       <li><a href="https://biopython.org">Biopython</a> lib</li>
+                       <p>Any other content to be covered before learning this to</p>
+                       </artice>
+               </section>
+               <section class="main-section" id="About_Topic">
+                   <h3 style = "background: black; color: white">About topic</h3>
+                   <article>
+                       <p>This is how to use it:
+                       </p>
+                       <li>Run: python translator.py "TCAATCGTGGCCCGA"</li>
+                       <li>Executable: translator.exe</li>
+                   </article>
+               </section>
+               <section class="main-section" id="Rule_1">
+                   <h3 style = "background: black; color: white">Rule 1</h3>
+                   <article>
+                       DNA sequence should contain only valid bases!
+                       <code>Bases: adenine (A), guanine (G), cytosine (C), and thymine (T)
+                       </code>
+                   </article>
+               </section>
+               <section class="main-section" id="Rule_2">
+                   <h3 style = "background: black; color: white">Rule 2</h3>
+                   <p>
+The DNA sequence's lenght should be devided by 3, since the ribosome is picky. :(
+                   </p>
+               </section>
+           </main>
+       </div>
+   </div>
+</div>
+</html>
