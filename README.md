@@ -9,4 +9,6 @@ Output: Amino acid sequence
 
 Run: python translator.py "AACCGGTT"
 
-Used package: [Biopython](https://biopython.org/)
+Used package: [Biopython](https://biopython.org/)  
+
+Documentation: [Bio Docs](https://www.sznistvan.hu/biodocs)
